@@ -1,0 +1,6 @@
+[submodule "ly"]
+	path = ly
+	url = https://github.com/fairyglade/ly.git
+[submodule "dmenu"]
+	path = dmenu
+	url = https://github.com/stilvoid/dmenu.git
