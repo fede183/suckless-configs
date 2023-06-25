@@ -1,3 +1,5 @@
+apt install build-essential libpam0g-dev libxcb-xkb-dev
+
 modules_to_install='dwm dmenu st slstatus'
 
 for module in $modules_to_install; do
