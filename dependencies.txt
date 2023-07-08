@@ -1,0 +1,9 @@
+build-essential
+libx11-dev
+libxinerama-dev
+sharutils
+suckless-tools
+libxft-dev
+stterm
+libpam0g-dev
+libxcd-xkb-dev
