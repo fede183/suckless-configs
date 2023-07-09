@@ -8,7 +8,7 @@ git apply patches/*;
 modules_to_install='dwm dmenu st slstatus'
 
 for module in $modules_to_install; do
-    echo $module
+    echo $module;
     cd $module;
     sudo rm config.h;
     sudo make clean install;
@@ -16,7 +16,7 @@ for module in $modules_to_install; do
 done
 
 for module in $modules_to_install; do
-    echo $module
+    echo $module;
     cd $module;
     sudo rm config.h;
     sudo make clean;
@@ -25,10 +25,10 @@ for module in $modules_to_install; do
 done
 
 # Finish dwm instalation
-sudo apt-get install dwm -y
-sudo cp /usr/share/xsessions/dwm.desktop{,.bak}
-sudo apt-get purge dwm -y
-sudo mv /usr/share/xsessions/dwm.desktop{.bak,}
+sudo apt-get install dwm -y;
+sudo cp /usr/share/xsessions/dwm.desktop{,.bak};
+sudo apt-get purge dwm -y;
+sudo mv /usr/share/xsessions/dwm.desktop{.bak,};
 
 # Fix the fonts
 cd libxft-bgra;
