@@ -1,0 +1,71 @@
+Submodule dwm contains modified content
+diff --git a/dwm/config.def.h b/dwm/config.def.h
+index 9efa774..b3510f0 100644
+--- a/dwm/config.def.h
++++ b/dwm/config.def.h
+@@ -60,6 +60,10 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn()
+ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+ static const char *termcmd[]  = { "st", NULL };
+ 
++static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%",     NULL };
++static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%",     NULL };
++static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "@DEFAULT_SINK@", "toggle",  NULL };
++
+ static const Key keys[] = {
+ 	/* modifier                     key        function        argument */
+ 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+@@ -95,6 +99,10 @@ static const Key keys[] = {
+ 	TAGKEYS(                        XK_8,                      7)
+ 	TAGKEYS(                        XK_9,                      8)
+ 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
++
++	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
++    { 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
++    { 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+ };
+ 
+ /* button definitions */
+Submodule slstatus contains modified content
+diff --git a/slstatus/components/volume.c b/slstatus/components/volume.c
+index 6cec556..a8fa9b4 100644
+--- a/slstatus/components/volume.c
++++ b/slstatus/components/volume.c
+@@ -217,3 +217,25 @@
+ 		return bprintf("%d", v & 0xff);
+ 	}
+ #endif
++
++char *trimString2(char *str)
++{
++    size_t len = strlen(str);
++
++    while(isspace(str[len - 1])) --len;
++    while(*str && isspace(*str)) ++str, --len;
++
++    return strndup(str, len);
++}
++
++const char *vol_perc_custom(const char *unused)
++{
++	char *volume = (char *)run_command("pactl get-sink-volume @DEFAULT_SINK@");
++	char *split_volume = strdup(volume);
++
++	strsep(&split_volume, "/");
++	char *volume_no_separator = strsep(&split_volume, "/");
++	const char *buf = trimString2(volume_no_separator);
++	
++	return buf[0] ? buf : NULL;
++}
+\ No newline at end of file
+diff --git a/slstatus/config.def.h b/slstatus/config.def.h
+index d805331..9cd08fe 100644
+--- a/slstatus/config.def.h
++++ b/slstatus/config.def.h
+@@ -65,5 +65,6 @@ static const char unknown_str[] = "n/a";
+  */
+ static const struct arg args[] = {
+ 	/* function format          argument */
+-	{ datetime, "%s",           "%F %T" },
++	{ vol_perc_custom, 	"volume: %s  ", NULL },
++	{ datetime, 		"%s",           "%R" },
+ };
