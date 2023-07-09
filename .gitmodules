@@ -7,3 +7,9 @@
 [submodule "dmenu"]
 	path = dmenu
 	url = https://git.suckless.org/dmenu/
+[submodule "dwm"]
+	path = dwm
+	url = https://git.suckless.org/dwm
+[submodule "slstatus"]
+	path = slstatus
+	url = https://git.suckless.org/slstatus
