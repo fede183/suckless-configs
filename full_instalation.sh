@@ -25,7 +25,7 @@ for module in $modules_to_install; do
 done
 
 # Finish dwm instalation
-sudo apt-get install dwm
+sudo apt-get install dwm -y
 sudo cp /usr/share/xsessions/dwm.desktop{,.bak}
-sudo apt-get purge dwm
+sudo apt-get purge dwm -y
 sudo mv /usr/share/xsessions/dwm.desktop{.bak,}
