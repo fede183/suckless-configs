@@ -13,3 +13,6 @@
 [submodule "slstatus"]
 	path = slstatus
 	url = https://git.suckless.org/slstatus
+[submodule "libxft-bgra"]
+	path = libxft-bgra
+	url = https://github.com/uditkarode/libxft-bgra
