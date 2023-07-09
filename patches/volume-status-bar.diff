@@ -1,0 +1,6 @@
+diff --git a/slstatus b/slstatus
+--- a/slstatus
++++ b/slstatus
+@@ -1 +1 @@
+-Subproject commit f68f49273e70b3767b30c549dda04ddd4d25fc91
++Subproject commit f68f49273e70b3767b30c549dda04ddd4d25fc91-dirty
