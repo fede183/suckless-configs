@@ -10,7 +10,7 @@ modules_to_install='dwm dmenu st slstatus'
 for module in $modules_to_install; do
     echo $module
     cd $module;
-    rm config.h;
+    sudo rm config.h;
     sudo make clean install;
     cd ..;
 done
@@ -18,7 +18,7 @@ done
 for module in $modules_to_install; do
     echo $module
     cd $module;
-    rm config.h;
+    sudo rm config.h;
     sudo make clean;
     git checkout -- .;
     cd ..;
