@@ -1,3 +1,6 @@
 [submodule "ly"]
 	path = ly
 	url = https://github.com/fairyglade/ly.git
+[submodule "st"]
+	path = st
+	url = https://git.suckless.org/st/
