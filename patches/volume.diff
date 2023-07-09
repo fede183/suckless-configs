@@ -81,4 +81,16 @@ index 8ef5874..849cddc 100644
  
  /* wifi */
  const char *wifi_essid(const char *interface);
+diff --git a/dwm/dwm.c b/dwm/dwm.c
+index f1d86b2..65ebafc 100644
+--- a/dwm/dwm.c
++++ b/dwm/dwm.c
+@@ -40,6 +40,7 @@
+ #include <X11/extensions/Xinerama.h>
+ #endif /* XINERAMA */
+ #include <X11/Xft/Xft.h>
++#include <X11/XF86keysym.h>
+ 
+ #include "drw.h"
+ #include "util.h"
 
