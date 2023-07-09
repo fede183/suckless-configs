@@ -40,3 +40,5 @@ mkdir ~/.local/share/fonts;
 unzip JetBrainsMono.zip ~/.local/share/fonts/;
 unzip Hack.zip ~/.local/share/fonts/;
 sudo fc-cache -fv;
+
+sudo apt-get autoremove;
