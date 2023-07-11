@@ -53,7 +53,7 @@ index 6cec556..a8fa9b4 100644
 +	strsep(&split_volume, "/");
 +	char *volume_no_separator = strsep(&split_volume, "/");
 +	const char *buf = trimString2(volume_no_separator);
-+	
++
 +	return buf[0] ? buf : NULL;
 +}
 \ No newline at end of file
