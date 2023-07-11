@@ -30,6 +30,13 @@ sudo cp /usr/share/xsessions/dwm.desktop{,.bak};
 sudo apt-get purge dwm -y;
 sudo mv /usr/share/xsessions/dwm.desktop{.bak,};
 
+# ly instalation
+cd ly;
+make run;
+make install installsystemd;
+systemctl enable ly.service;
+cd ..;
+
 # Fix the fonts
 cd libxft-bgra;
 sh autogen.sh --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man;
