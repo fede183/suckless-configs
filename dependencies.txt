@@ -7,3 +7,6 @@ libxft-dev
 stterm
 libpam0g-dev
 libxcd-xkb-dev
+autoconf
+xutils-dev
+libtool

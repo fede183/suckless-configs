@@ -39,6 +39,7 @@ cd ..;
 
 # Fix the fonts
 cd libxft-bgra;
+chmod +x autogen.sh;
 sh autogen.sh --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man;
 sudo make install;
 cd ..;
