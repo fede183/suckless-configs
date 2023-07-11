@@ -53,8 +53,8 @@ for font in $fonts_to_download; do
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip
     unzip fonts/$font.zip -d ~/.local/share/fonts/ -A;
 done
-
 sudo fc-cache -fv;
+cd ..;
 rm -rf fonts;
 
 sudo apt-get autoremove -y;
