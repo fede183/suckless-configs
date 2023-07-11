@@ -46,11 +46,11 @@ cd ..;
 
 mkdir ~/.local/share/fonts;
 mkdir fonts;
-cd fonts
-fonts_to_download = 'JetBrainsMono Hack Noto'
+cd fonts;
+fonts_to_download = 'JetBrainsMono Hack Noto';
 
 for font in $fonts_to_download; do
-    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip;
     unzip fonts/$font.zip -d ~/.local/share/fonts/ -A;
 done
 sudo fc-cache -fv;
