@@ -47,7 +47,7 @@ cd ..;
 mkdir ~/.local/share/fonts;
 mkdir fonts;
 cd fonts;
-fonts_to_download = 'JetBrainsMono Hack Noto';
+fonts_to_download='JetBrainsMono Hack Noto';
 
 for font in $fonts_to_download; do
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip;
