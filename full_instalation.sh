@@ -1,6 +1,9 @@
 # Installing dependencies
 xargs -rxa dependencies.txt -- sudo apt-get install -y --;
 
+# Unninstall ubuntu packages
+xargs -rxa ubuntu-package-to-remove.txt -- sudo apt-get purge -y --;
+
 # Applying patches
 git apply patches/*;
 
