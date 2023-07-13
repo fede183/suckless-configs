@@ -44,6 +44,14 @@ sh autogen.sh --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man;
 sudo make install;
 cd ..;
 
+sudo apt-get autoremove -y;
+
+read -p "you want to install the fonts? (type y)" -n 1 -r
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    exit;
+fi
+
 mkdir ~/.local/share/fonts;
 mkdir fonts;
 cd fonts;
@@ -56,5 +64,3 @@ done
 sudo fc-cache -fv;
 cd ..;
 rm -rf fonts;
-
-sudo apt-get autoremove -y;
