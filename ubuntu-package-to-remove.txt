@@ -28,3 +28,4 @@ rygel
 librygel-*
 plymouth-theme-*
 branding-ubuntu
+speech-dispatcher*
