@@ -10,3 +10,4 @@ libxcd-xkb-dev
 autoconf
 xutils-dev
 libtool
+thunar

@@ -28,3 +28,4 @@ librygel-*
 plymouth-theme-*
 branding-ubuntu
 speech-dispatcher*
+nautilus-sendto
