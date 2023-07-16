@@ -7,8 +7,7 @@ language-pack-gnome-en-base
 language-pack-gnome-ru
 language-pack-gnome-ru-base 
 language-selector-gnome 
-libgail18 
-libgail-common 
+libgail18
 libgail-common
 libgnome*
 libgoa-1.0-0b
