@@ -6,10 +6,7 @@ bluetoothctl pair $gamepad_id;
 bluetoothctl connect $gamepad_id;'
 
 # Installing dependencies
-xargs -rxa dependencies.txt -- sudo apt-get install -y --;
-
-# Unninstall ubuntu packages
-xargs -rxa ubuntu-package-to-remove.txt -- sudo apt-get purge -y --;
+xargs -rxa dependencies.txt -- sudo pacman -Sy --;
 
 # Applying patches
 git apply patches/*;
@@ -34,42 +31,35 @@ for module in $modules_to_install; do
     cd ..;
 done
 
-# Finish dwm instalation
-sudo apt-get install dwm -y;
-sudo cp /usr/share/xsessions/dwm.desktop{,.bak};
-sudo apt-get purge dwm -y;
-sudo mv /usr/share/xsessions/dwm.desktop{.bak,};
-
-# ly instalation
-cd ly;
-make run;
-make install installsystemd;
-systemctl enable ly.service;
+# Install yay
+cd yay;
+makepkg -si;
 cd ..;
 
-# Fix the fonts
-cd libxft-bgra;
-chmod +x autogen.sh;
-sh autogen.sh --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man;
-sudo make install;
-cd ..;
+# Install aur's
+aurs_to_install='codium libxft neovim'
+for aur in $aurs_to_install; do
+    echo $aur;
+    yay $aur;
+done
 
-sudo apt-get autoremove -y;
+sudo pacman -Qdtq;
+sudo pacman -Sc;
 
 read -p "you want to install the fonts? (type y)" -n 1 -r
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
-    exit;
+   exit;
 fi
 
 mkdir ~/.local/share/fonts;
 mkdir fonts;
 cd fonts;
-fonts_to_download='JetBrainsMono Hack Noto';
+fonts_to_download='LiberationMono JetBrainsMono Hack Noto';
 
 for font in $fonts_to_download; do
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip;
-    unzip fonts/$font.zip -d ~/.local/share/fonts/ -A;
+    unzip $font.zip -d ~/.local/share/fonts;
 done
 sudo fc-cache -fv;
 cd ..;
