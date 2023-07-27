@@ -15,4 +15,4 @@ fuse-overlayfs
 bluez
 bluez-utils
 libxft
-xwallpaper
+xwallpapermaim
