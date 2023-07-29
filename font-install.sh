@@ -1,3 +1,5 @@
+#!/bin/sh
+
 read -p "you want to install the fonts? (type y)" -n 1 -r
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then

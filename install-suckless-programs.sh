@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Applying patches
 git apply patches/*;
 

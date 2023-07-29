@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Installing dependencies
 xargs -rxa dependencies.txt -- sudo pacman -Sy --;
 

@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Install install ide
 yay codium;
 
