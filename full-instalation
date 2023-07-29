@@ -1,8 +1,8 @@
 #!/bin/sh
 
-bash install-dependencies.sh;
-bash install-suckless-programs.sh;
-bash coder-setup.sh;
-bash font-install.sh;
-bash install-steam.sh;
+bash install-dependencies;
+bash install-suckless-programs;
+bash coder-setup;
+bash font-install;
+bash install-steam;
 mv xinitrc-default ~/.xinitrc;

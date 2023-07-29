@@ -5,7 +5,7 @@ yay codium;
 
 # Install neovim
 yay neovim;
-bash nvim-configs/requirements.sh;
+bash nvim-configs/requirements;
 mkdir ~/.config/nvim;
 cp nvim-configs/* ~/.config/nvim;
 
