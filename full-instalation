@@ -5,4 +5,5 @@ bash install-suckless-programs;
 bash coder-setup;
 bash font-install;
 bash install-steam;
+bash personal-setups;
 mv xinitrc-default ~/.xinitrc;
