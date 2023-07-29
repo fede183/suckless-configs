@@ -1,5 +1,4 @@
 # TODO: 
 - fix the st emoji problem (is not breaking anymore but the color emojis are not being shown)
-- add the buttom to connect to the gamepad on slstatus
 - find a way to set global scripts
 - wallpaper set on start (.xprofile)
