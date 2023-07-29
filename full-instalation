@@ -7,3 +7,4 @@ bash font-install;
 bash install-steam;
 bash personal-setups;
 mv xinitrc-default ~/.xinitrc;
+mv xprofile-default ~/.xprofile;
