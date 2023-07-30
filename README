@@ -1,3 +1,7 @@
+# For creating patches:
+git diff --submodule=diff 
+
 # TODO: 
-- fix the st emoji problem (is not breaking anymore but the color emojis are not being shown)
+- fix the chinise characters (probably it needs another font)
 - setup citrux
+- wallpaper script for automatic change
