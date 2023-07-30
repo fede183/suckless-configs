@@ -5,3 +5,4 @@ git diff --submodule=diff
 - fix the chinise characters (probably it needs another font)
 - setup citrux
 - wallpaper script for automatic change
+- color scheme for st
