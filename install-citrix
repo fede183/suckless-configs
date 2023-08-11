@@ -1,0 +1,21 @@
+#!/bin/sh
+
+yay icaclient;
+
+wfica_file=/usr/share/applications/wfica.desktop;
+
+[[ -f $wfica_file ]] && sudo rm $wfica_file;
+
+sudo touch $wfica_file;
+
+sudo bash -c "sudo cat <<EOT >> ${wfica_file}
+[Desktop Entry]
+Name=Citrix ICA client
+Comment=\"Launch Citrix applications from .ica files\"
+Categories=Network;
+Exec=/opt/Citrix/ICAClient/wfica
+Terminal=false
+Type=Application
+NoDisplay=true
+MimeType=application/x-ica;
+EOT";
