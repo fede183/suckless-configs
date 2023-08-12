@@ -1,9 +1,12 @@
 # For creating patches:
-git diff --submodule=diff 
+git diff --submodule=diff
 
-# TODO: 
+# TODO:
 - fix the chinise characters (probably it needs another font)
-- setup citrux
 - wallpaper script for automatic change
-- color scheme for st
-- check the surf
+
+
+# PARTIALLY DONE:
+- setup citrux (partially done)
+- color scheme for st (done, need ajustments)
+- check the surf(tested, not nice)
