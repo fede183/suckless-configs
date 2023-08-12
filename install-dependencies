@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # Installing dependencies
-xargs -rxa dependencies -- sudo pacman -Sy --;
+xargs -rxa dependencies -- sudo pacman -Sy --
 
 # Install yay
-cd yay;
-makepkg -si;
-cd ..;
+cd yay
+makepkg -si
+cd ..

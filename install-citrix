@@ -1,12 +1,12 @@
 #!/bin/sh
 
-yay icaclient;
+yay icaclient
 
-wfica_file=/usr/share/applications/wfica.desktop;
+wfica_file=/usr/share/applications/wfica.desktop
 
-[[ -f $wfica_file ]] && sudo rm $wfica_file;
+[[ -f $wfica_file ]] && sudo rm $wfica_file
 
-sudo touch $wfica_file;
+sudo touch $wfica_file
 
 sudo bash -c "sudo cat <<EOT >> ${wfica_file}
 [Desktop Entry]
@@ -18,4 +18,4 @@ Terminal=false
 Type=Application
 NoDisplay=true
 MimeType=application/x-ica;
-EOT";
+EOT"

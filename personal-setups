@@ -1,4 +1,3 @@
 #!/bin/sh
 
-# Gamepad script
-sudo cp gamepad-connect /usr/local/bin/;
+sudo cp personal-scripts/* /usr/local/bin/

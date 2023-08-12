@@ -1,10 +1,10 @@
 #!/bin/sh
 
-bash install-dependencies;
-bash install-suckless-programs;
-bash coder-setup;
-bash font-install;
-bash install-steam;
-bash personal-setups;
-mv xinitrc-default ~/.xinitrc;
-mv xprofile-default ~/.xprofile;
+bash install-dependencies
+bash install-suckless-programs
+bash coder-setup
+bash font-install
+bash install-steam
+bash personal-setups
+mv xserver-configs/xinitrc-default ~/.xinitrc
+mv xserver-configs/xprofile-default ~/.xprofile
