@@ -3,10 +3,10 @@ git diff --submodule=diff
 
 # TODO:
 - fix the chinese and japanese characters (probably it needs another font)
-- wallpaper script for automatic change
 - set email locally
 
 # PARTIALLY DONE:
 - setup citrux (partially done)
 - color scheme for st (done, need ajustments)
 - check the surf(tested, not nice)
+- wallpaper script for automatic change (fix notify-send error)

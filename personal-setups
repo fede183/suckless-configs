@@ -1,3 +1,8 @@
 #!/bin/sh
 
+for file in personal-scripts/*
+do
+  sudo chmod +x $file
+done
+
 sudo cp personal-scripts/* /usr/local/bin/

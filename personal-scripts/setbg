@@ -1,15 +1,16 @@
 #!/bin/sh
 
-[-f "$1"] && cp "$1" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Wallpaper Changed"
+wallpaper_dir=~/.config/wall.png
 
-[-d "$1"] && mv "find "$1"/*.{jpg,jpeg,png} -type f | shuf -n 1" ~/.config/wall.png && notify-send -i "$HOME/.config/wall.png" "Random Wallpaper Chosen"
+[ -f "$1" ] && cp "$1" $wallpaper_dir && notify-send -i $wallpaper_dir "Wallpaper Changed"
+
+[ -d "$1" ] && mv "find "$1"/*.{jpg,jpeg,png} -type f | shuf -n 1" $wallpaper_dir && notify-send -i $wallpaper_dir "Random Wallpaper Chosen"
 
 # If pywal is installed, use it.
-type wal >/dev/null 2>&1 && {wal -c
-    wal -s -i ~/.config/wall.png -o ~/.config/wal/postrun
+type wal >/dev/null 2>&1 && { wal -c
+    wal -s -i $wallpaper_dir -o ~/.config/wal/postrun
     xsetroot -name "fsignal:xrdb"
     killall dwmblocks
     setsid dwmblocks >/dev/null & } >/dev/null 2>&1
-}
 
-xwallpaper --zoom .config/wall.jpg
+xwallpaper --zoom $wallpaper_dir

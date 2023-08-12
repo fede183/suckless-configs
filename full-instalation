@@ -6,5 +6,4 @@ bash coder-setup
 bash font-install
 bash install-steam
 bash personal-setups
-mv xserver-configs/xinitrc-default ~/.xinitrc
-mv xserver-configs/xprofile-default ~/.xprofile
+bash xserver-configs-install

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mv xserver-configs/xinitrc-default ~/.xinitrc
+mv xserver-configs/xprofile-default ~/.xprofile
