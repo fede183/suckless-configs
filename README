@@ -2,7 +2,7 @@
 git diff --submodule=diff
 
 # TODO:
-- fix the chinise characters (probably it needs another font)
+- fix the chinese and japanese characters (probably it needs another font)
 - wallpaper script for automatic change
 
 
