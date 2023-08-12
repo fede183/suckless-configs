@@ -7,3 +7,5 @@ xargs -rxa dependencies -- sudo pacman -Sy --
 cd yay
 makepkg -si
 cd ..
+
+yay transmission-remote-cli
