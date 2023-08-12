@@ -4,7 +4,6 @@ git diff --submodule=diff
 # TODO:
 - fix the chinese and japanese characters (probably it needs another font)
 - set up email locally
-- set up torrent
 - set up virtual machine
 
 # PARTIALLY DONE:
