@@ -7,5 +7,6 @@ bash font-install
 bash install-steam
 bash personal-setups
 bash xserver-configs-install
+bash install-virtual-machine
 sudo pacman -R $(pacman -Qdtq)
 
