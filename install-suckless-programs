@@ -17,4 +17,3 @@ for module in $modules_to_install; do
     cd ..
 done
 
-sudo pacman -R $(pacman -Qdtq)

@@ -7,3 +7,5 @@ bash font-install
 bash install-steam
 bash personal-setups
 bash xserver-configs-install
+sudo pacman -R $(pacman -Qdtq)
+

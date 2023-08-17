@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install install ide
-yay codium
+yay vscodium-bin
 
 # Install neovim
 yay neovim
