@@ -27,4 +27,5 @@ vde2
 bridge-utils 
 openbsd-netcat
 libguestfs
+xdg-utils
 
