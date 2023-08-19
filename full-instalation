@@ -3,7 +3,7 @@
 bash install-dependencies
 bash install-suckless-programs
 bash coder-setup
-bash font-install
+bash install-fonts
 bash install-steam
 bash personal-setups
 bash xserver-configs-install
