@@ -1,13 +1,15 @@
 #!/bin/sh
 
-# Install install ide
-yay vscodium-bin
-
 # Install neovim
 yay neovim
 bash nvim-configs/requirements
-mkdir ~/.config/nvim
-cp nvim-configs/* ~/.config/nvim
+
+DIR=~/.config/nvim
+[ -d "$DIR" ] && rm -rf "$DIR"
+
+mkdir $DIR
+
+rsync -av --exclude=".*" nvim-configs/* $DIR
 
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
