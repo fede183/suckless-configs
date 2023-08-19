@@ -6,15 +6,21 @@ then
    exit
 fi
 
-mkdir ~/.local/share/fonts
-mkdir fonts
-cd fonts
-fonts_to_download='JetBrainsMono Noto'
+DIR=~/.local/share/fonts
+TMP=/tmp/fonts
+FONTS='JetBrainsMono Noto'
 
-for font in $fonts_to_download; do
+[[ -d "$DIR"]] && rm -rf $DIR
+mkdir $DIR 
+
+mkdir $TMP
+cd $TMP
+
+for font in $FONTS; do
     wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip
     unzip $font.zip -d ~/.local/share/fonts
 done
+
 sudo fc-cache -fv
-cd ..
-rm -rf fonts
+cd ../..
+rm -rf $TMP

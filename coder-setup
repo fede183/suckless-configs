@@ -5,7 +5,7 @@ yay neovim
 bash nvim-configs/requirements
 
 DIR=~/.config/nvim
-[ -d "$DIR" ] && rm -rf "$DIR"
+[[ -d "$DIR" ]] && rm -rf "$DIR"
 
 mkdir $DIR
 
