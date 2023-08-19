@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# TODO: complete download of a folder
+
+wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1WH9PwZh7bzBeNJYSBn8tD-dtmgsFYyPw'
+
