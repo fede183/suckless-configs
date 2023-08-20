@@ -28,4 +28,6 @@ bridge-utils
 openbsd-netcat
 libguestfs
 xdg-utils
-
+groff
+zathura
+zathura-pdf-mupdf
