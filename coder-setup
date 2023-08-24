@@ -2,14 +2,7 @@
 
 # Install neovim
 yay neovim
-bash nvim-configs/requirements
-
-DIR=~/.config/nvim
-[[ -d "$DIR" ]] && rm -rf "$DIR"
-
-mkdir $DIR
-
-rsync -av --exclude=".*" nvim-configs/* $DIR
+bash vim-configs/install-nvim-config
 
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
