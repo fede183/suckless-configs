@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # Install neovim
-yay neovim
 bash vim-configs/install-nvim-config
 
 # Install rust
