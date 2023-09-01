@@ -1,7 +1,20 @@
 #!/bin/sh
 
-# Install neovim
-bash vim-configs/install-nvim-config
+# Install editor
+
+EDITOR_OPTIONS='vim neovim'
+
+select editor in $EDITOR_OPTIONS; do 
+   case $editor in 
+	   vim)
+		   bash vim-configs/install-vim-configs
+		   break ;;
+	   neovim)
+		   bash vim-configs/install-nvim-configs
+		   break ;;
+   esac
+done
+
 
 # Install rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
