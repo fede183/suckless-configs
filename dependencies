@@ -32,3 +32,7 @@ groff
 zathura
 zathura-pdf-mupdf
 mpv
+gstreamer
+gst-plugins-good
+gst-libav
+

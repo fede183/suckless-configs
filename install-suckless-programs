@@ -4,7 +4,7 @@
 git apply patches/*
 
 # Installing suckless programs
-modules_to_install='dwm dmenu st slstatus'
+modules_to_install='dwm dmenu st slstatus surf'
 
 for module in $modules_to_install; do
     echo $module

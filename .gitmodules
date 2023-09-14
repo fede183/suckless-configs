@@ -16,3 +16,6 @@
 [submodule "vim-configs"]
 	path = vim-configs
 	url = https://github.com/fede183/vim-configs.git
+[submodule "surf"]
+	path = surf
+	url = https://git.suckless.org/surf
