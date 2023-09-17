@@ -7,7 +7,7 @@ git diff --submodule=diff
 - set alarms for events
 - complete docs with commands of git
 - download documentation and files from google drive
+- make surf capable to use a handler for citrix
 
 # PARTIALLY DONE:
 - color scheme for st (done, need ajustments)
-- check the surf (tested, not nice)

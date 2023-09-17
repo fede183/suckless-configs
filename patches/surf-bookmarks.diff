@@ -13,7 +13,7 @@ index 93cfeeb..9b765fa 100644
 -             "&& xprop -id $1 -f "s" 8u -set "s" \"$prop\"", \
 +             "| sed \"s/^$2(STRING) = //;s/^\\\"\\(.*\\)\\\"$/\\1/\" && cat ~/.surf/bookmarks)\" " \
 +             "| dmenu -l 10 -p \"$4\" -w $1)\" && " \
-+	     "&& xprop -id $1 -f "s" 8u -set "s" \"$prop\"", \
++	      "xprop -id $1 -f "s" 8u -set "s" \"$prop\"", \
               "surf-setprop", winid, NULL \
          } \
  }

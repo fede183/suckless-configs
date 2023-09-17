@@ -17,3 +17,6 @@ for module in $modules_to_install; do
     cd ..
 done
 
+# Config files
+[ ! -d ~/.surf ] && mkdir ~/.surf
+cp config-files/bookmarks ~/.surf
