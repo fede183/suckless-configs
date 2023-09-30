@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Installing utils
+xargs -rxa utils -- sudo pacman -Sy --

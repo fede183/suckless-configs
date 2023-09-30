@@ -1,6 +1,7 @@
 #!/bin/sh
 
 bash install-dependencies
+bash install-utilities
 bash install-suckless-programs
 bash coder-setup
 bash install-fonts

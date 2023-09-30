@@ -1,0 +1,15 @@
+wget
+unzip
+bluez
+bluez-utils
+maim
+xwallpaper
+transmission-cli
+qemu-full 
+virt-manager 
+virt-viewer
+groff
+zathura
+zathura-pdf-mupdf
+mpv
+neomutt
