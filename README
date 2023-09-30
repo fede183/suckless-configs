@@ -3,11 +3,11 @@ git diff --submodule=diff
 
 # TODO:
 - fix the chinese and japanese characters (probably it needs another font)
-- set up email locally
 - set alarms for events
 - complete docs with commands of git
-- download documentation and files from google drive
+- script to download documentation and files from google drive
 - make surf capable to use a handler for citrix
 
 # PARTIALLY DONE:
 - color scheme for st (done, need ajustments)
+- set up email locally
