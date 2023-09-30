@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd mutt-configs
+
+bash install-mutt
+bash config-mutt
+
+cd ..

@@ -6,6 +6,7 @@ bash install-suckless-programs
 bash coder-setup
 bash install-fonts
 bash install-steam
+bash install-email
 bash personal-setups
 bash xserver-configs-install
 bash install-virtual-machine
