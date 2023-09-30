@@ -19,3 +19,6 @@
 [submodule "surf"]
 	path = surf
 	url = https://git.suckless.org/surf
+[submodule "mutt-configs"]
+	path = mutt-configs
+	url = https://github.com/fede183/mutt-configs.git
