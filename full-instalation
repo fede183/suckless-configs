@@ -10,5 +10,6 @@ bash install-email
 bash personal-setups
 bash xserver-configs-install
 bash install-virtual-machine
+bash setting-transmission
 sudo pacman -R $(pacman -Qdtq)
 

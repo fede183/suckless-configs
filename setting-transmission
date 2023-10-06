@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkdir -p ~/.local/log
+
+transmission-daemon --logfile ~/.local/log/transmission.log
