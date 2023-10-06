@@ -7,6 +7,7 @@ git diff --submodule=diff
 - complete docs with commands of git
 - script to download documentation and files from google drive
 - make surf capable to use a handler for citrix
+- script the transmission-remote
 
 # PARTIALLY DONE:
 - color scheme for st (done, need ajustments)

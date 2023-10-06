@@ -3,3 +3,8 @@
 mkdir -p ~/.local/log
 
 transmission-daemon --logfile ~/.local/log/transmission.log
+
+# For configure
+# transmission-remote --exit
+# vim ~/.config/transmission-daemon/settings.json
+# transmission-daemon --logfile ~/.local/log/transmission.log
