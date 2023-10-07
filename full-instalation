@@ -3,6 +3,7 @@
 bash install-dependencies
 bash install-utilities
 bash install-suckless-programs
+bash browser-setup
 bash coder-setup
 bash install-fonts
 bash install-steam
