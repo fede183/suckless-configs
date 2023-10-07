@@ -1,3 +1,7 @@
 #!/bin/sh
 
 bash vim-configs/install-vimb-config
+
+yay wyebadblock
+
+sudo ln -s /usr/lib/wyebrowser/4.1/adblock.so /usr/lib/vimb
