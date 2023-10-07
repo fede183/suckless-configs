@@ -19,3 +19,6 @@
 [submodule "mutt-configs"]
 	path = mutt-configs
 	url = https://github.com/fede183/mutt-configs.git
+[submodule "wyebadblock"]
+	path = wyebadblock
+	url = https://github.com/jun7/wyebadblock.git
