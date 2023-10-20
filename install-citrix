@@ -19,3 +19,22 @@ Type=Application
 NoDisplay=true
 MimeType=application/x-ica;
 EOT"
+
+
+xdg_file=/usr/share/mime/packages/application-x-ica.xml
+
+[[ -f $xdg_file ]] && sudo rm $xdg_file
+
+sudo touch $xdg_file
+
+sudo bash -c "sudo cat <<EOT >> ${xdg_file}
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/x-ica">
+	    <comment>ica file</comment>
+	    <icon name="application-x-ica"/>
+	    <glob-deleteall/>
+	    <glob pattern="*.ica"/>
+	</mime-type>
+</mime-info>
+EOT"
