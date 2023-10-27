@@ -3,14 +3,14 @@
 bash install-dependencies
 bash install-utilities
 bash install-suckless-programs
-bash browser-setup
+bash install-browser
 bash coder-setup
 bash install-fonts
 bash install-steam
 bash install-email
-bash personal-setups
-bash xserver-configs-install
 bash install-virtual-machine
-bash setting-transmission
+bash setup-scripts/personal-setups
+bash setup-scripts/xserver-configs-install
+bash setup-scripts/setting-transmission
 sudo pacman -R $(pacman -Qdtq)
 
