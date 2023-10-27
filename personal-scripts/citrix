@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/opt/Citrix/ICAClient/wfica $1

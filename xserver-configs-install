@@ -1,4 +1,5 @@
 #!/bin/sh
 
-mv config-files/xserver-configs/xinitrc-default ~/.xinitrc
-mv config-files/xserver-configs/xprofile-default ~/.xprofile
+cp config-files/xserver-configs/xinitrc-default ~/.xinitrc
+cp config-files/xserver-configs/xprofile-default ~/.xprofile
+echo "xinitrc and xprofile were set"

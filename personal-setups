@@ -6,3 +6,4 @@ do
 done
 
 sudo cp personal-scripts/* /usr/local/bin/
+echo "All the personal scripts were added/updated"
