@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for file in personal-scripts/*
+for file in config-files/personal-scripts/*
 do
   sudo chmod +x $file
 done
