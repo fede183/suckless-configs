@@ -1,4 +1,0 @@
-#!/bin/sh
-
-main_repo_path=realpath ./
-install_script_path=realpath install-scripts/

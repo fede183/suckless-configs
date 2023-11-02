@@ -2,17 +2,18 @@
 
 # Install editor
 
-source ../location-vars
+SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+source $SCRIPTPATH/location-vars
 
 EDITOR_OPTIONS='vim neovim'
 
 select editor in $EDITOR_OPTIONS; do 
    case $editor in 
 	   vim)
-		   bash $main_repo_path/vim-configs/install-vim-config
+		   bash $MAIN_REPO_PATH/vim-configs/install-vim-config
 		   break ;;
 	   neovim)
-		   bash $main_repo_path/vim-configs/install-nvim-config
+		   bash $MAIN_REPO_PATH/vim-configs/install-nvim-config
 		   break ;;
    esac
 done

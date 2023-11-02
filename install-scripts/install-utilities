@@ -1,4 +1,7 @@
 #!/bin/sh
 
+SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+source $SCRIPTPATH/location-vars
+
 # Installing utils
-xargs -rxa utils -- sudo pacman -Sy --
+xargs -rxa $SCRIPTPATH/utils -- sudo pacman -Sy --

@@ -1,16 +1,17 @@
 #!/bin/sh
 
-source ../location-vars
+SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+source $SCRIPTPATH/location-vars
 
-bash $main_repo_path/vim-configs/install-vimb-config
+bash $MAIN_REPO_PATH/vim-configs/install-vimb-config
 
-cd $main_repo_path/wyebadblock
+cd $MAIN_REPO_PATH/wyebadblock
 
 make clean
 WEBKITVER=4.1 make
 sudo WEBKITVER=4.1 make install
 
-cd $install_script_path 
+cd $INSTALL_SCRIPT_PATH 
 
 wget -nv -O ~/.config/wyebadblock/easylist.txt https://easylist.to/easylist/easylist.txt
 sudo ln -s /usr/lib/wyebrowser/4.1/adblock.so /usr/lib/vimb

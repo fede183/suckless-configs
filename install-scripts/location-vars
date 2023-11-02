@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+MAIN_REPO_PATH="$(dirname "$SCRIPTPATH")"
+INSTALL_SCRIPT_PATH=$SCRIPTPATH

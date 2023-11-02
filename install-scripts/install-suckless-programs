@@ -1,14 +1,15 @@
 #!/bin/sh
 
-source ../location-vars
+SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+source $SCRIPTPATH/location-vars
 
 # Applying patches
-git apply patches/*
+git apply $MAIN_REPO_PATH/patches/*
 
 # Installing suckless programs
 modules_to_install='dwm dmenu st slstatus surf'
 
-for module in $main_repo_path/$modules_to_install; do
+for module in $MAIN_REPO_PATH/$modules_to_install; do
     echo $module
     cd $module
     sudo rm config.h
@@ -16,5 +17,5 @@ for module in $main_repo_path/$modules_to_install; do
     sudo rm config.h
     sudo make clean
     git checkout -- .
-    cd $install_scripts_path
+    cd $INSTALL_SCRIPTS_PATH
 done
