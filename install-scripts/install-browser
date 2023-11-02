@@ -1,14 +1,16 @@
 #!/bin/sh
 
-bash vim-configs/install-vimb-config
+source ../location-vars
 
-cd wyebadblock
+bash $main_repo_path/vim-configs/install-vimb-config
+
+cd $main_repo_path/wyebadblock
 
 make clean
 WEBKITVER=4.1 make
 sudo WEBKITVER=4.1 make install
 
-cd ..
+cd $install_script_path 
 
 wget -nv -O ~/.config/wyebadblock/easylist.txt https://easylist.to/easylist/easylist.txt
 sudo ln -s /usr/lib/wyebrowser/4.1/adblock.so /usr/lib/vimb

@@ -2,15 +2,17 @@
 
 # Install editor
 
+source ../location-vars
+
 EDITOR_OPTIONS='vim neovim'
 
 select editor in $EDITOR_OPTIONS; do 
    case $editor in 
 	   vim)
-		   bash vim-configs/install-vim-config
+		   bash $main_repo_path/vim-configs/install-vim-config
 		   break ;;
 	   neovim)
-		   bash vim-configs/install-nvim-config
+		   bash $main_repo_path/vim-configs/install-nvim-config
 		   break ;;
    esac
 done

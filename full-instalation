@@ -1,14 +1,14 @@
 #!/bin/sh
 
-bash install-dependencies
-bash install-utilities
-bash install-suckless-programs
-bash install-browser
-bash coder-setup
-bash install-fonts
-bash install-steam
-bash install-email
-bash install-virtual-machine
+bash install-scripts/install-dependencies
+bash install-scripts/install-utilities
+bash install-scripts/install-suckless-programs
+bash install-scripts/install-browser
+bash install-scripts/coder-setup
+bash install-scripts/install-fonts
+bash install-scripts/install-steam
+bash install-scripts/install-email
+bash install-scripts/install-virtual-machine
 bash setup-scripts/personal-setups
 bash setup-scripts/xserver-configs-install
 bash setup-scripts/setting-transmission

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+source ../location-vars
+
+cd $main_repo_path/mutt-configs
+
+bash install-mutt
+bash config-mutt
+
+cd $install_repo_path

@@ -1,12 +1,14 @@
 #!/bin/sh
 
+source ../location-vars
+
 # Applying patches
 git apply patches/*
 
 # Installing suckless programs
 modules_to_install='dwm dmenu st slstatus surf'
 
-for module in $modules_to_install; do
+for module in $main_repo_path/$modules_to_install; do
     echo $module
     cd $module
     sudo rm config.h
@@ -14,9 +16,5 @@ for module in $modules_to_install; do
     sudo rm config.h
     sudo make clean
     git checkout -- .
-    cd ..
+    cd $install_scripts_path
 done
-
-# Config files
-[ ! -d ~/.surf ] && mkdir ~/.surf
-cp config-files/bookmarks ~/.surf
