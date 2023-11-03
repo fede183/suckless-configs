@@ -1,10 +1,13 @@
 #!/bin/sh
 
+
+git submodule update --init --recursive
+
 bash install-scripts/install-dependencies
 bash install-scripts/install-utilities
 bash install-scripts/install-suckless-programs
 bash install-scripts/install-browser
-bash install-scripts/coder-setup
+bash install-scripts/install-coder-tools
 bash install-scripts/install-fonts
 bash install-scripts/install-steam
 bash install-scripts/install-email
