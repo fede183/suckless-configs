@@ -7,7 +7,7 @@ source $SCRIPTPATH/location-vars
 git apply $MAIN_REPO_PATH/patches/*
 
 # Installing suckless programs
-modules_to_install='dwm dmenu st slstatus surf'
+modules_to_install='dwm dmenu st slstatus'
 
 for module in $MAIN_REPO_PATH/$modules_to_install; do
     echo $module
@@ -17,5 +17,5 @@ for module in $MAIN_REPO_PATH/$modules_to_install; do
     sudo rm config.h
     sudo make clean
     git checkout -- .
-    cd $INSTALL_SCRIPTS_PATH
+    cd $INSTALL_SCRIPT_PATH
 done
