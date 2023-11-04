@@ -1,5 +1,8 @@
 #!/bin/sh
 
-cp xserver-configs/xinitrc-default ~/.xinitrc
-cp xserver-configs/xprofile-default ~/.xprofile
+SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+XSERVERPATH=$SCRIPTPATH/xserver-configs
+
+cp $XSERVERPATH/xinitrc-default ~/.xinitrc
+cp $XSERVERPATH/xprofile-default ~/.xprofile
 echo "xinitrc and xprofile were set"
