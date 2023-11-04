@@ -1,9 +1,13 @@
 #!/bin/sh
 
-for file in config-files/personal-scripts/*
+SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+PERSONALSCRIPTPATH=$SCRIPTPATH/personal-scripts
+
+for file in $PERSONALSCRIPTPATH/*
 do
   sudo chmod +x $file
 done
 
-sudo cp personal-scripts/* /usr/local/bin/
+sudo cp $PERSONALSCRIPTPATH/* /usr/local/bin/
 echo "All the personal scripts were added/updated"
