@@ -1,5 +1,5 @@
 xorg
-xorg-init
+xorg-xinit
 pipewire
 pipewire-pulse
 pavucontrol
