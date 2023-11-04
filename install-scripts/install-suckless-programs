@@ -9,9 +9,9 @@ git apply $MAIN_REPO_PATH/patches/*
 # Installing suckless programs
 modules_to_install='dwm dmenu st slstatus'
 
-for module in $MAIN_REPO_PATH/$modules_to_install; do
+for module in $modules_to_install; do
     echo $module
-    cd $module
+    cd $MAIN_REPO_PATH/$module
     sudo rm config.h
     sudo make clean install
     sudo rm config.h
