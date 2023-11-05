@@ -7,6 +7,6 @@ XSERVERPATH=$SCRIPTPATH/xserver-configs
 
 cp $XSERVERPATH/xinitrc-default ~/.xinitrc
 cp $XSERVERPATH/xprofile-default ~/.xprofile
-echo "xinitrc and xprofile were set"
+cp $XSERVERPATH/bash_profile ~/.bash_profile
 
 echo "-- Configure xserver End --"
