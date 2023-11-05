@@ -24,11 +24,11 @@ echo "-- Install Rust --"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo "-- Install Rust End --"
 
-echo "-- Install Haskell End --"
+echo "-- Install Haskell --"
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 echo "-- Install Haskell End --"
 
-echo "-- Install Rootless Docker End --"
+echo "-- Install Rootless Docker --"
 curl -fsSL https://get.docker.com/rootless | sh
 sudo pacman -S docker-compose
 echo "-- Install Rootless Docker End --"
