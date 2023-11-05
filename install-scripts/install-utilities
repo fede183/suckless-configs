@@ -1,7 +1,10 @@
 #!/bin/sh
 
+echo "-- Install Utilities --"
+
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
-# Installing utils
 xargs -rxa $SCRIPTPATH/utilities -- sudo pacman -Sy --
+
+echo "-- Install Utilities End --"

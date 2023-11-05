@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "-- Installing Mutt Configs --"
+
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
@@ -9,3 +11,5 @@ bash install-mutt
 bash config-mutt
 
 cd $INSTALL_REPO_PATH
+
+echo "-- Installing Mutt Configs End --"

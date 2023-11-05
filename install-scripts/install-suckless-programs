@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "-- Install and Configure Suckless Programs --"
+
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
@@ -10,7 +12,7 @@ git apply $MAIN_REPO_PATH/patches/*
 modules_to_install='dwm dmenu st slstatus'
 
 for module in $modules_to_install; do
-    echo $module
+    echo "-- Install and Configure $module --"
     cd $MAIN_REPO_PATH/$module
     sudo rm config.h
     sudo make clean install
@@ -18,4 +20,7 @@ for module in $modules_to_install; do
     sudo make clean
     git checkout -- .
     cd $INSTALL_SCRIPT_PATH
+    echo "-- Install and Configure $module End --"
 done
+
+echo "-- Install and Configure Suckless Programs End --"

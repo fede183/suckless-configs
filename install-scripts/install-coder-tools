@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Install editor
+echo "-- Install Code Editor --"
 
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
@@ -18,13 +18,17 @@ select editor in $EDITOR_OPTIONS; do
    esac
 done
 
+echo "-- Install Code Editor End --"
 
-# Install rust
+echo "-- Install Rust --"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+echo "-- Install Rust End --"
 
-# Install haskell
+echo "-- Install Haskell End --"
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+echo "-- Install Haskell End --"
 
-# Install rootless docker
+echo "-- Install Rootless Docker End --"
 curl -fsSL https://get.docker.com/rootless | sh
 sudo pacman -S docker-compose
+echo "-- Install Rootless Docker End --"

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo "-- Full Install --"
 
 git submodule update --init --recursive
 
@@ -17,3 +18,4 @@ bash setup-scripts/xserver-configs-install
 bash setup-scripts/setting-transmission
 sudo pacman -R $(pacman -Qdtq)
 
+echo "-- Full Install End --"

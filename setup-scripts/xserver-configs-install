@@ -1,8 +1,12 @@
 #!/bin/sh
 
+echo "-- Configure xserver --"
+
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 XSERVERPATH=$SCRIPTPATH/xserver-configs
 
 cp $XSERVERPATH/xinitrc-default ~/.xinitrc
 cp $XSERVERPATH/xprofile-default ~/.xprofile
 echo "xinitrc and xprofile were set"
+
+echo "-- Configure xserver End --"

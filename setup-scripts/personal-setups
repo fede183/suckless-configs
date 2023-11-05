@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "-- Configure Personal Scripts --"
+
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 PERSONALSCRIPTPATH=$SCRIPTPATH/personal-scripts
 
@@ -10,3 +12,5 @@ done
 
 sudo cp $PERSONALSCRIPTPATH/* /usr/local/bin/
 echo "All the personal scripts were added/updated"
+
+echo "-- Configure Sersonal Scripts End --"

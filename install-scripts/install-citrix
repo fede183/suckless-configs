@@ -1,6 +1,12 @@
 #!/bin/sh
 
+echo "-- Install Citrix Client --"
+
 yay icaclient
+
+echo "-- Install Citrix Client End --"
+
+echo "-- Configure Citrix Client --"
 
 wfica_file=/usr/share/applications/wfica.desktop
 
@@ -38,3 +44,5 @@ sudo bash -c "sudo cat <<EOT >> ${xdg_file}
 	</mime-type>
 </mime-info>
 EOT"
+
+echo "-- Configure Citrix Client End --"

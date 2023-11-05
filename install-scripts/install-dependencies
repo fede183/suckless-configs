@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "-- Installing Dependencies --"
+
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
@@ -10,3 +12,5 @@ xargs -rxa $INSTALL_SCRIPT_PATH/dependencies -- sudo pacman -Sy --
 cd $MAIN_REPO_PATH/yay
 makepkg -si
 cd $INSTALL_SCRIPT_PATH
+
+echo "-- Installing Dependencies End --"
