@@ -2,7 +2,9 @@
 
 echo "-- Full Install --"
 
+echo "-- Get Repositories --"
 git submodule update --init --recursive
+echo "-- Get Repositories End"
 
 bash install-scripts/install-dependencies
 bash install-scripts/install-utilities
@@ -16,6 +18,9 @@ bash install-scripts/install-virtual-machine
 bash setup-scripts/personal-setups
 bash setup-scripts/xserver-configs-install
 bash setup-scripts/setting-transmission
+
+echo "-- Autoremove --"
 sudo pacman -R $(pacman -Qdtq)
+echo "-- Autoremove End --"
 
 echo "-- Full Install End --"
