@@ -5,6 +5,6 @@ echo "-- Install Utilities --"
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
-xargs -rxa $SCRIPTPATH/utilities -- sudo pacman -Sy --
+xargs -rxa $SCRIPTPATH/utilities -- sudo pacman -Sy --noconfirm --
 
 echo "-- Install Utilities End --"

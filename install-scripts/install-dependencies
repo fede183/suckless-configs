@@ -6,7 +6,7 @@ SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
 # Installing dependencies
-xargs -rxa $INSTALL_SCRIPT_PATH/dependencies -- sudo pacman -Sy --
+xargs -rxa $INSTALL_SCRIPT_PATH/dependencies -- sudo pacman -Sy --noconfirm --
 
 # Install yay
 cd $MAIN_REPO_PATH/yay
