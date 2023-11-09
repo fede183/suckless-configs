@@ -1,8 +1,5 @@
-# For creating patches:
-git diff --submodule=diff
-
 # For get the repos when you clone
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
 
 # TODO:
 - fix the chinese and japanese characters (probably it needs another font)
