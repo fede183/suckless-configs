@@ -14,8 +14,7 @@ for module in $modules_to_install; do
     [ -f config.h ] && sudo rm config.h
     sudo make clean install
     [ -f config.h ] && sudo rm config.h
-    sudo make clean
-    git checkout -- .)
+    sudo make clean)
     echo "-- Install and Configure $module End --"
 done
 echo "-- Install and Configure Suckless Programs End --"
