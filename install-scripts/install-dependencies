@@ -9,8 +9,7 @@ source $SCRIPTPATH/location-vars
 xargs -rxa $INSTALL_SCRIPT_PATH/dependencies -- sudo pacman -Sy --noconfirm --
 
 # Install yay
-cd $MAIN_REPO_PATH/yay
-makepkg -si
-cd $INSTALL_SCRIPT_PATH
+(cd $MAIN_REPO_PATH/yay
+makepkg -si)
 
 echo "-- Installing Dependencies End --"

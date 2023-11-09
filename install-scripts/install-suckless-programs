@@ -11,18 +11,14 @@ git apply $MAIN_REPO_PATH/patches/*
 # Installing suckless programs
 modules_to_install='dwm dmenu st slstatus'
 
-cd $MAIN_REPO_PATH
 for module in $modules_to_install; do
     echo "-- Install and Configure $module --"
-    cd $module
+    (cd $MAIN_REPO_PATH/$module
     [ -f config.h ] && sudo rm config.h
     sudo make clean install
     [ -f config.h ] && sudo rm config.h
     sudo make clean
-    git checkout -- .
-    cd $MAIN_REPO_PATH
+    git checkout -- .)
     echo "-- Install and Configure $module End --"
 done
-
-cd $INSTALL_SCRIPT_PATH
 echo "-- Install and Configure Suckless Programs End --"
