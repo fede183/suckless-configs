@@ -5,9 +5,6 @@ echo "-- Install and Configure Suckless Programs --"
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
-# Applying patches
-git apply $MAIN_REPO_PATH/patches/*
-
 # Installing suckless programs
 modules_to_install='dwm dmenu st slstatus'
 

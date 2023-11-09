@@ -3,7 +3,7 @@
 echo "-- Full Install --"
 
 echo "-- Get Repositories --"
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
 echo "-- Get Repositories End"
 
 bash install-scripts/install-dependencies
