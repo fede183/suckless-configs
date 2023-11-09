@@ -1,15 +1,19 @@
 [submodule "st"]
 	path = st
-	url = https://git.suckless.org/st/
+	url = https://github.com/fede183/st.git
+	branch = master
 [submodule "dmenu"]
 	path = dmenu
-	url = https://git.suckless.org/dmenu/
+	url = https://github.com/fede183/dmenu.git
+	branch = master
 [submodule "dwm"]
 	path = dwm
-	url = https://git.suckless.org/dwm
+	url = https://github.com/fede183/dwm.git
+	branch = master
 [submodule "slstatus"]
 	path = slstatus
-	url = https://git.suckless.org/slstatus
+	url = https://github.com/fede183/slstatus.git
+	branch = master
 [submodule "yay"]
 	path = yay
 	url = https://aur.archlinux.org/yay.git
