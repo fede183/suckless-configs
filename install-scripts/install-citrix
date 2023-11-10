@@ -2,7 +2,7 @@
 
 echo "-- Install Citrix Client --"
 
-yay icaclient
+yay icaclient --noconfirm
 
 echo "-- Install Citrix Client End --"
 
