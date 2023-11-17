@@ -2,7 +2,6 @@
 
 echo "-- Full Install --"
 
-bash install-scripts/install-dependencies
 bash install-scripts/install-utilities
 
 bash install-scripts/install-browser
@@ -20,6 +19,7 @@ bash install-scripts/install-suckless-programs &
 bash setup-scripts/personal-setups &
 bash setup-scripts/xserver-configs-install &
 bash setup-scripts/setting-transmission &
+bash setup-scripts/citrix-config &
 wait
 
 echo "-- Autoremove --"

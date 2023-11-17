@@ -1,10 +1,23 @@
 #!/bin/sh
 
-echo "-- Install Utilities --"
-
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
+
+echo "-- Installing Dependencies --"
+
+# Installing dependencies
+xargs -rxa $INSTALL_SCRIPT_PATH/dependencies -- sudo pacman -Sy --noconfirm --
+
+# Install yay
+(cd $MAIN_REPO_PATH/yay
+makepkg -si)
+
+echo "-- Installing Dependencies End --"
+
+echo "-- Install Utilities --"
 
 xargs -rxa $SCRIPTPATH/utilities -- sudo pacman -Sy --noconfirm --
 
 echo "-- Install Utilities End --"
+
+xargs -rxa $SCRIPTPATH/yay-programs -- yay --noconfirm --aur --answerclean All --answerdiff None --
