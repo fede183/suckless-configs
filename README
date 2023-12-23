@@ -1,4 +1,7 @@
-# For get the repos when you clone
+For get the repos when you clone
+================================
+
+# Update submodules
 git submodule update --init --recursive --remote
 
 # TODO:
@@ -6,6 +9,7 @@ git submodule update --init --recursive --remote
 - set alarms for events
 - complete docs with commands of git
 - script to download documentation and files from google drive
+- filter not executable programs in dmenu
 
 # PARTIALLY DONE:
 - color scheme for st (done, need ajustments)
