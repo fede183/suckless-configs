@@ -1,7 +1,13 @@
 #!/bin/sh
 
 gamepad_id='8C:41:F2:07:02:3F'
-sudo systemctl enable bluetooth && sudo systemctl start bluetooth
+
+if  ! (systemctl -q is-active bluetooth) 
+then
+	systemctl enable bluetooth
+	systemctl start bluetooth
+fi
+
 bluetoothctl power on
 timeout 5 bluetoothctl scan on
 bluetoothctl pair $gamepad_id
