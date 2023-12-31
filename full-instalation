@@ -3,7 +3,6 @@
 echo "-- Full Install --"
 
 bash install-scripts/install-utilities
-
 bash install-scripts/install-browser
 bash install-scripts/install-coder-tools
 bash install-scripts/install-fonts
@@ -23,7 +22,7 @@ bash setup-scripts/citrix-config &
 wait
 
 echo "-- Autoremove --"
-sudo pacman -R $(pacman -Qdtq)
+sudo pacman -R $(sudo pacman -Qdtq)
 echo "-- Autoremove End --"
 
 echo "-- Full Install End --"
