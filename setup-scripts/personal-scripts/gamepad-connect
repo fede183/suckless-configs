@@ -10,7 +10,7 @@ fi
 
 bluetoothctl power on
 timeout 5 bluetoothctl scan on
-bluetoothctl cancel-pairing $gamepad_id
-bluetoothctl disconnect $gamepad_id
+timeout 5 bluetoothctl cancel-pairing $gamepad_id
+timeout 5 bluetoothctl disconnect $gamepad_id
 bluetoothctl pair $gamepad_id
 bluetoothctl connect $gamepad_id
