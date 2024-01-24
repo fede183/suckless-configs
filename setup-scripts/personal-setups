@@ -3,7 +3,7 @@
 echo "-- Configure Personal Scripts --"
 
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-PERSONALSCRIPTPATH=$SCRIPTPATH/personal-scripts
+PERSONALSCRIPTPATH=$SCRIPTPATH/custom-scripts
 
 for file in $PERSONALSCRIPTPATH/*
 do
