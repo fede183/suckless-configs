@@ -3,7 +3,8 @@
 echo "-- Full Install --"
 
 bash install-scripts/install-utilities
-bash install-scripts/install-browser
+# Browser will not be install with this script
+# bash install-scripts/install-browser
 bash install-scripts/install-coder-tools
 bash install-scripts/install-fonts
 bash install-scripts/install-steam
