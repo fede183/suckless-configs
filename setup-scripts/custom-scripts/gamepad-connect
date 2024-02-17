@@ -1,6 +1,7 @@
 #!/bin/sh
 
-gamepad_id='8C:41:F2:07:02:3F'
+# gamepad_id='8C:41:F2:07:02:3F'
+gamepad_id='0C:35:26:23:E7:DE'
 
 if  ! (systemctl -q is-active bluetooth) 
 then
