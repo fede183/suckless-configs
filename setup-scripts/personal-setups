@@ -5,12 +5,10 @@ echo "-- Configure Personal Scripts --"
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 PERSONALSCRIPTPATH=$SCRIPTPATH/custom-scripts
 
-for file in $PERSONALSCRIPTPATH/*
-do
-  sudo chmod +x $file
-done
+[ -d ~/.config/custom-scripts ] && rm -rf ~/.config/custom-scripts
 
-sudo cp $PERSONALSCRIPTPATH/* /usr/local/bin/
+cp -r $PERSONALSCRIPTPATH ~/.config
+
 echo "All the personal scripts were added/updated"
 
 echo "-- Configure Sersonal Scripts End --"
