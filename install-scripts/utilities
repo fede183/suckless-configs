@@ -20,3 +20,4 @@ gdb
 dolphin-emu
 mdpdf
 qutebrowser
+valgrind
