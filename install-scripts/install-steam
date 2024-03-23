@@ -2,7 +2,7 @@
 
 echo "-- Install Steam --"
 
-sed -i '/^\#\[multilib\]/ {s/^\#\[multilib\]$/\[multilib\]/;N; s/\#Include/Include/g}' /etc/pacman.conf
+sudo sed -i '/^\#\[multilib\]/ {s/^\#\[multilib\]$/\[multilib\]/;N; s/\#Include/Include/g}' /etc/pacman.conf
 
 sudo pacman -Suy --noconfirm && sudo pacman -Sy steam --noconfirm
 
