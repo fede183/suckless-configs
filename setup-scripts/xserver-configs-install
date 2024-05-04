@@ -1,7 +1,10 @@
 #!/bin/sh
 
-echo "-- Configure xserver --"
+echo "-- Install setbg script --"
 
+cp setbg ~/.config
+
+echo "-- Configure xserver --"
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 XSERVERPATH=$SCRIPTPATH/xserver-configs
 

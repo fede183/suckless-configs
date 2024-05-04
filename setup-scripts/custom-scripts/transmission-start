@@ -1,3 +1,0 @@
-#!/bin/sh
-
-transmission-daemon --logfile ~/.local/log/transmission.log

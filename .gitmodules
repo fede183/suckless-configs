@@ -14,12 +14,3 @@
 	path = slstatus
 	url = https://github.com/fede183/slstatus.git
 	branch = master
-[submodule "yay"]
-	path = yay
-	url = https://aur.archlinux.org/yay.git
-[submodule "vim-configs"]
-	path = vim-configs
-	url = https://github.com/fede183/vim-configs.git
-[submodule "mutt-configs"]
-	path = mutt-configs
-	url = https://github.com/fede183/mutt-configs.git
