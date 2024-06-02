@@ -2,14 +2,16 @@
 
 echo "-- Install setbg script --"
 
-cp setbg ~/.config
 
 echo "-- Configure xserver --"
 SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 XSERVERPATH=$SCRIPTPATH/xserver-configs
 
-cp $XSERVERPATH/xinitrc ~/.xinitrc
-cp $XSERVERPATH/xprofile ~/.xprofile
-cp $XSERVERPATH/bash_profile ~/.bash_profile
+cp $SCRIPTPATH/setbg ~/.config &
+
+cp $XSERVERPATH/xinitrc ~/.xinitrc &
+cp $XSERVERPATH/xprofile ~/.xprofile &
+cp $XSERVERPATH/bash_profile ~/.bash_profile &
+wait
 
 echo "-- Configure xserver End --"
