@@ -3,7 +3,7 @@
 [ -f ~/.xprofile ] && . ~/.xprofile &
 
 /usr/bin/pipewire &
-/usr/bin/pipiwire-pulse &
+/usr/bin/pipewire-pulse &
 /usr/bin/pipewire-media-session &
 
 exec slstatus &

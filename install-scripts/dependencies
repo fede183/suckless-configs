@@ -2,6 +2,7 @@ xorg
 xorg-xinit
 pipewire
 pipewire-pulse
+pipewire-alsa
 pavucontrol
 libx11
 libxinerama
