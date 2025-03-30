@@ -6,7 +6,7 @@ SCRIPTPATH=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source $SCRIPTPATH/location-vars
 
 # Installing suckless programs
-modules_to_install='dwm dmenu st slstatus'
+modules_to_install='dwl dmenu st slstatus'
 
 for module in $modules_to_install; do
     echo "-- Install and Configure $module --"

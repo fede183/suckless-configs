@@ -22,3 +22,9 @@ gstreamer
 gst-plugins-good
 gst-libav
 xcompmgr
+libinput
+wayland
+wlroots
+xkbcommon
+wayland-protocols
+pkg-config
