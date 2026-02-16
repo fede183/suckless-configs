@@ -40,8 +40,7 @@ git submodule update --init --recursive --remote
 
 # TODO:
 - fix the chinese and japanese characters (probably it needs another font)
-- set alarms for events
-- complete docs with commands of git
+- set alarms for events, like emails
 - script to download documentation and files from google drive
 - filter not executable programs in dmenu
 
