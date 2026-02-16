@@ -19,7 +19,7 @@ Each one of these with their respective patches already apply. I do not know if 
 I do not include surf because I feel that is too unconfortable to use for my taste. I try other unconventional browsers like vimb for examble, but I prefer librewolf for now.
 
 # Solution for the emoji problem
-As any person that try suckless software knows, the minimalistic approach almost always works, but there are also some problems you may want to solve before starting with the customizations. In my opinion the most urgent is the fact that st and dmenu do not suport emoji render.
+As any person that try suckless software knows, the minimalistic approach almost always works, but there are also some problems you may want to solve before starting with the customizations. In my opinion the most urgent is the fact that st and dmenu do not support emoji render.
 
 The best fix I could find was to install libxft-bgra.
 
