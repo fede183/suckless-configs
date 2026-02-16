@@ -6,7 +6,7 @@ My suckless setups
 - MentalOutlaw [youtube](https://www.youtube.com/@MentalOutlaw)
 - Bread on Penguins [github](https://github.com/BreadOnPenguins) [youtube](https://www.youtube.com/@BreadOnPenguins)
 
-You guys are being really helpfull on this journey of mine.
+You guys had being really helpfull on this journey of mine.
 
 # Includes my forks of:
 - dwm
