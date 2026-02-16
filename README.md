@@ -28,7 +28,7 @@ I include the instalation of fonts JetBrainsMono and Noto.
 # Customizations
 Apart from some key bindings, the main difference from the base instalation is the configuration of slstatus bar.
 
-[Menu](docs/slstatus.jpg)
+![Menu](docs/slstatus.jpg)
 
 - volume, with his key bindings
 - the hour
