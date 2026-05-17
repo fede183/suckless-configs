@@ -1,4 +1,4 @@
 #!/bin/sh
 
-watch -n 60 setbg ~/.config/wallpapers
+setbg ~/.config/wallpapers
 xcompmgr &
