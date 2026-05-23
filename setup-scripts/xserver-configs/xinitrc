@@ -4,7 +4,8 @@
 
 /usr/bin/pipewire &
 /usr/bin/pipewire-pulse &
-/usr/bin/pipewire-media-session &
+/usr/bin/wireplumber &
 
-exec slstatus &
+(sleep 5s; slstatus) &
+
 exec dwm

@@ -13,7 +13,6 @@ for module in $modules_to_install; do
     (cd $MAIN_REPO_PATH/$module
     [ -f config.h ] && sudo rm config.h
     sudo make clean install
-    [ -f config.h ] && sudo rm config.h
     sudo make clean)
     echo "-- Install and Configure $module End --"
 done

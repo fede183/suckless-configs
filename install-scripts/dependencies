@@ -14,7 +14,7 @@ libxft
 python-pywal
 dnsmasq 
 vde2 
-bridge-utils 
+iproute2
 openbsd-netcat
 libguestfs
 xdg-utils

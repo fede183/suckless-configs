@@ -23,7 +23,7 @@ for font in $FONTS; do
     unzip $font.zip -d ~/.local/share/fonts
 done
 
-sudo fc-cache -fv
+fc-cache -fv
 cd ../..
 rm -rf $TMP
 
