@@ -2,10 +2,6 @@
 
 [ -f ~/.xprofile ] && . ~/.xprofile &
 
-/usr/bin/pipewire &
-/usr/bin/pipewire-pulse &
-/usr/bin/wireplumber &
-
-(sleep 5s; slstatus) &
+slstatus &
 
 exec dwm
