@@ -2,3 +2,4 @@
 
 setbg ~/.config/wallpapers
 xcompmgr &
+setxkbmap -layout latam
